@@ -5,7 +5,7 @@ namespace GenericRepository
 {
     public abstract class BaseRepository<T, Y> where T : class
     {
-        private readonly DbContext _dbContext;
+        protected readonly DbContext _dbContext;
         private readonly DbSet<T> _dbSet;
         public BaseRepository(DbContext appDbContext)
         {
