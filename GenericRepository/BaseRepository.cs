@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 
 namespace GenericRepository
 {
-    public abstract class BaseRepository<T, Y> where T : class
+    public abstract class BaseRepository<T, Y>: IBaseRepository<T, Y> where T : class
     {
         protected readonly DbContext _dbContext;
         private readonly DbSet<T> _dbSet;
