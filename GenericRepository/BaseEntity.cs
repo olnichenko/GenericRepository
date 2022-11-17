@@ -2,7 +2,7 @@
 
 namespace GenericRepository
 {
-    public abstract class BaseEntity<T>
+    public abstract class BaseEntityAbstract<T>
     {
         [Key]
         public T Id { get; set; }
